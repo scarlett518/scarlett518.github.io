@@ -1,6 +1,15 @@
 {
-    "title":"Blog Title",
-    "subTitle":"Blog description",
-    "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
+    "title":"scarlett的生活小站",
+    "subTitle":"每天进步一点点",
+    "avatarUrl":"https://image.scarlett518.me/file/1cf516c722caaf2f85201.jpg",
+    "singlePage":["link","about"],
+    "email":"scarlett518@126.com",
+    "startSite":"03/18/2024",
+    "onePageListNum":15,
+    "commentLabelColor":"#006b75",
+    "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
+    "i18n":"CN",
+    "nightTheme":"dark_colorblind",
+    "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
     "GMEEK_VERSION":"last"
 }
