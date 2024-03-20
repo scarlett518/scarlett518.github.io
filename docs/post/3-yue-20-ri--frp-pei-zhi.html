@@ -143,7 +143,7 @@ transport.useCompression = true   #传输压缩，压缩算法采用 snappy
 </code></pre>
 <p>输完命令回车后会弹个窗口，根据实际情况按下图填后按<code class="notranslate">Install service</code>即可<br>
 <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7b0a5e3388afdd00ffc6e9103187e8b145ee296a565192ad761c1593faf7122c/68747470733a2f2f696d6167652e736361726c6574743531382e6d652f66696c652f6666356565613234653461383861656338313838642e6a7067"><img src="https://camo.githubusercontent.com/7b0a5e3388afdd00ffc6e9103187e8b145ee296a565192ad761c1593faf7122c/68747470733a2f2f696d6167652e736361726c6574743531382e6d652f66696c652f6666356565613234653461383861656338313838642e6a7067" alt="" data-canonical-src="https://image.scarlett518.me/file/ff5eea24e4a88aec8188d.jpg" style="max-width: 100%;"></a><br>
-之后到<code class="notranslate">任务管理器→服务</code> 中找到<code class="notranslate">frps``frpc</code>服务后右键开始就没问题了。如果之后要更新 frps.toml或frps.toml 配置文件，再次找到此处右键重新启动就没问题了</p>
+之后到<code class="notranslate">任务管理器→服务</code> 中找到<code class="notranslate">frps</code>或<code class="notranslate">frpc</code>服务后右键开始就没问题了。如果之后要更新<code class="notranslate">frps.toml</code>或<code class="notranslate">frps.toml</code>配置文件，再次找到此处右键重新启动就没问题了</p>
 <h2>linux运行</h2>
 <p>新建frps.service或frpc.service文件，写入</p>
 <pre class="notranslate"><code class="notranslate">[Unit]
@@ -191,6 +191,7 @@ chmod 700 ./install-frps.sh
 <div class="highlight highlight-source-shell"><pre class="notranslate">./install-frps.sh update</pre></div>
 <h3>Server management（服务管理器）</h3>
 <div class="highlight highlight-source-shell"><pre class="notranslate">Usage: /etc/init.d/frps {start<span class="pl-k">|</span>stop<span class="pl-k">|</span>restart<span class="pl-k">|</span>status<span class="pl-k">|</span>config<span class="pl-k">|</span>version}
+
 <span class="pl-c"><span class="pl-c">#</span>## [stilleshan](https://github.com/stilleshan)大佬提供的frpc一键安装脚本</span>
 安装
 <span class="pl-s"><span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span>shell</span>
