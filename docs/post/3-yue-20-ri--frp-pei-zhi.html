@@ -70,7 +70,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><strong>之前一直用老版本ini的配置文件，用新的配置文件toml的时候发现老版本的参数不能套用了</strong><br>
+<div class="markdown-body" id="postBody"><p><strong>之前一直用老版本ini的配置文件，用新配置文件toml的时候发现老版本的参数不能套用了</strong><br>
 <strong>特意贴出一份frps.toml和frpc.toml模版，方便以后使用</strong></p>
 <h2>frps.toml</h2>
 <pre class="notranslate"><code class="notranslate"># frps.toml
@@ -190,14 +190,13 @@ chmod 700 ./install-frps.sh
 <p>更新</p>
 <div class="highlight highlight-source-shell"><pre class="notranslate">./install-frps.sh update</pre></div>
 <h3>Server management（服务管理器）</h3>
-<div class="highlight highlight-source-shell"><pre class="notranslate">Usage: /etc/init.d/frps {start<span class="pl-k">|</span>stop<span class="pl-k">|</span>restart<span class="pl-k">|</span>status<span class="pl-k">|</span>config<span class="pl-k">|</span>version}
-
-<span class="pl-c"><span class="pl-c">#</span>## [stilleshan](https://github.com/stilleshan)大佬提供的frpc一键安装脚本</span>
-安装
-<span class="pl-s"><span class="pl-pds">`</span><span class="pl-pds">`</span><span class="pl-pds">`</span>shell</span>
-<span class="pl-s">wget https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_install.sh <span class="pl-k">&amp;&amp;</span> chmod +x frpc_linux_install.sh <span class="pl-k">&amp;&amp;</span> ./frpc_linux_install.sh</span>
-<span class="pl-s"><span class="pl-c"><span class="pl-c">#</span> 以下为国内镜像</span></span>
-<span class="pl-s">wget https://github.ioiox.com/stilleshan/frpc/raw/branch/master/frpc_linux_install.sh <span class="pl-k">&amp;&amp;</span> chmod +x frpc_linux_install.sh <span class="pl-k">&amp;&amp;</span> ./frpc_linux_install.sh</span></pre></div>
+<div class="highlight highlight-source-shell"><pre class="notranslate">Usage: /etc/init.d/frps {start<span class="pl-k">|</span>stop<span class="pl-k">|</span>restart<span class="pl-k">|</span>status<span class="pl-k">|</span>config<span class="pl-k">|</span>version}</pre></div>
+<h3><a href="https://github.com/stilleshan">stilleshan</a>大佬提供的frpc一键安装脚本</h3>
+<p>安装</p>
+<div class="highlight highlight-source-shell"><pre class="notranslate">wget https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_install.sh <span class="pl-k">&amp;&amp;</span> chmod +x frpc_linux_install.sh <span class="pl-k">&amp;&amp;</span> ./frpc_linux_install.sh</pre></div>
+<h4>国内镜像</h4>
+<pre class="notranslate"><code class="notranslate">wget https://github.ioiox.com/stilleshan/frpc/raw/branch/master/frpc_linux_install.sh &amp;&amp; chmod +x frpc_linux_install.sh &amp;&amp; ./frpc_linux_install.sh
+</code></pre>
 <p>使用</p>
 <div class="highlight highlight-source-shell"><pre class="notranslate">vi /usr/local/frp/frpc.toml
 <span class="pl-c"><span class="pl-c">#</span> 修改 frpc.toml 配置</span>
