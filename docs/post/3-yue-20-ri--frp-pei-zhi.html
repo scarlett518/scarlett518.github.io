@@ -109,6 +109,9 @@ serverAddr = "x.x.x.x"   #服务器地址
 serverPort = 5443   #服务器端口
 auth.method = "token"   #服务端连接身份认证，默认token
 auth.token = "test123"   #服务端token密码，密码不正确将无法连接服务器
+transport.tls.enable = false   #是否和服务端之间启用TLS连接
+transport.tls.disableCustomTLSFirstByte = false
+#默认为true，当配置为true时，无法和vhostHTTPSPort端口复用
 
 [[proxies]]
 name = "xxx"   #隧道名称，可自定义，不能重复
